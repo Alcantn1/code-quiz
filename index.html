@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <header class="wrapper" > 
+        <div class="start-quiz" id="start" >
+        <h1>Code Quiz Challenge!</h1>
+        <p> Try to answer as many questions as you can correctly and for every wrong answer, 15 seconds with be taken off the timer</p>
+    <button id="pressBtn">Begin Quiz </button>
+     </div>
+    <section id="questions" class="hide" >
+        <h2 id="select">  </h2>
+        <div class="answers" class="answers"></div>
+    </section>
+
+    <section id="finished" class="hide">
+<h2> FINISHED!</h2>
+<p>Final Score:<span id="final"></span></p>
+        <p>Enter Your Initials <input type="text" id="initials" max="4"/>
+        <button id="submit">submit</button>  </p>
+    </section>
+    
+    
+    
+    </header>
+    <script src="assets/logic.js"></script>
+
+    
+</body>
+</html>
