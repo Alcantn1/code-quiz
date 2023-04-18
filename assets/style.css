@@ -1,0 +1,22 @@
+body {
+background-color:cornflowerblue;
+}
+
+
+.wrapper{
+    margin: 200px auto;
+    max-width: 400px;
+    /* border-style: solid; */
+    
+}
+
+.hide{
+    display: none;
+}
+
+button{
+    background-color: aqua;
+}
+button:hover{
+    background-color: crimson;
+}
