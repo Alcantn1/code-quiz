@@ -47,15 +47,15 @@ var questionBank =  [
 const startQuiz = () => {
   startButtonEl.setAttribute('class', 'hide');
   pressBtnEl.setAttribute('class', 'hide');
-  questionListEl.removeAttribute('class');
+  questionListEl.removeAttribute('class', 'hide');
   getQuestion();
+  
 };
 
-window.addEventListener('load', startQuiz);
 
 function getQuestion() {
   if (currentQuestionIndex >= questionBank.length) {
-    questionListEl.setAttribute('class', 'hide');
+    questionListEl.setAttribute('class');
     finishedEl.removeAttribute('class');
     finalEl.textContent = `Your final score is ${score}.`;
     return;
@@ -79,7 +79,7 @@ function getQuestion() {
   }
 }
 
-pressBtnEl.addEventListener('click', () => {
+startButtonEl.addEventListener('click', () => {
   console.log('The "press" button was clicked!');
   startQuiz();
 });
