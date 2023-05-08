@@ -55,11 +55,14 @@ const startQuiz = () => {
 
 function getQuestion() {
   if (currentQuestionIndex >= questionBank.length) {
-    questionListEl.setAttribute('class');
+    questionListEl.setAttribute('class', 'hide');
     finishedEl.removeAttribute('class');
     finalEl.textContent = `Your final score is ${score}.`;
     return;
   }
+
+  
+  
   
   // display questions 
   const currentQuestion = questionBank[currentQuestionIndex];

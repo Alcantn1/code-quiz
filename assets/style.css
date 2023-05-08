@@ -16,6 +16,7 @@ background-color:cornflowerblue;
 
 button{
     background-color: aqua;
+    display: block;
 }
 button:hover{
     background-color: crimson;
